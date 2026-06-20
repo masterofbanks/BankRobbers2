@@ -5,13 +5,15 @@ public class WheelPhysics : MonoBehaviour
     [Header("Tire Details")]
     [SerializeField] private float WheelRadius;
     [SerializeField] private float BrakeForce;
-    private bool TireInContactWithGround;
+    public bool TakeSettingsFromCarManager = true;
+    public bool TireInContactWithGround;// { get; private set;}
     private RaycastHit hit;
 
     [Header("Grip Details")]
     [SerializeField] private float GripFactor = 0.5f;
     [SerializeField] private float TireMass = 0.085f;
     [SerializeField] private bool CanTurn = true;
+    [SerializeField] private bool CanBrake = true;
 
     [Header("Suspension Details")]
     [SerializeField] private float SuspensionRestDistance = 0.5f;
@@ -21,7 +23,7 @@ public class WheelPhysics : MonoBehaviour
     [Header("Power Details")]
     [SerializeField] private bool HasPower = true;
 
-    public void TestWhetherWheelHitTheGround(LayerMask groundLayer)
+    public virtual void TestWhetherWheelHitTheGround(LayerMask groundLayer)
     {
         TireInContactWithGround = Physics.Raycast(transform.position, -1 * transform.up, out hit, WheelRadius, groundLayer);
     }
@@ -89,7 +91,6 @@ public class WheelPhysics : MonoBehaviour
             Vector3 directionOfForce = transform.forward;
             if (!goForward)
             {
-                Debug.Log("Backwards!!");
                 directionOfForce = -transform.forward;
             }
             carBody.AddForceAtPosition(directionOfForce * amountOfPower, transform.position);
@@ -105,7 +106,7 @@ public class WheelPhysics : MonoBehaviour
     public void BrakeWheel(Rigidbody carBody)
     {
         
-        if (TireInContactWithGround)
+        if (TireInContactWithGround && CanBrake)
         {
             Vector3 brakeDirection = -transform.forward;
             carBody.AddForceAtPosition(BrakeForce * brakeDirection, transform.position);
