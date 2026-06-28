@@ -241,15 +241,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 25226314984257976, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.2
+      value: 3.76
       objectReference: {fileID: 0}
     - target: {fileID: 25226314984257976, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.2
+      value: 3.76
       objectReference: {fileID: 0}
     - target: {fileID: 286742676749388054, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 325979454411557892, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: m_Enabled
@@ -265,15 +265,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 353679172332095474, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: SpringDamper
-      value: 75
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 353679172332095474, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: SpringStrength
-      value: 1250
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: 438222646318774561, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 492670900446704271, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -281,15 +281,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 552155576874535054, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 694846361678460683, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: SpringDamper
-      value: 75
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 694846361678460683, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: SpringStrength
-      value: 1250
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 694846361678460683, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
+      propertyPath: TireInContactWithGround
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1249136628342425974, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -311,6 +315,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1882114847351806455, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1988384252992372084, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -325,11 +333,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2009757461774945872, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: SpringDamper
-      value: 75
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2009757461774945872, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: SpringStrength
-      value: 1250
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: 2705431978235604124, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: m_IsActive
@@ -345,59 +353,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2852829950533035540, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: SpringDamper
-      value: 75
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2852829950533035540, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: SpringStrength
-      value: 1250
-      objectReference: {fileID: 0}
-    - target: {fileID: 2908326551133370972, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2908326551133370972, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2963835145060043011, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2963835145060043011, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3129768433538975471, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3129768433538975471, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3475040970437560572, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
-      propertyPath: JumpForce
-      value: 400
-      objectReference: {fileID: 0}
-    - target: {fileID: 3475040970437560572, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
-      propertyPath: SpringDamper
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 3475040970437560572, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
-      propertyPath: SpringStrength
       value: 900
       objectReference: {fileID: 0}
-    - target: {fileID: 3475040970437560572, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
-      propertyPath: GravityOnTheWayUp
-      value: 32
+    - target: {fileID: 2908326551133370972, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908326551133370972, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 2963835145060043011, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 2963835145060043011, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129768433538975471, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129768433538975471, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.76
       objectReference: {fileID: 0}
     - target: {fileID: 3475040970437560572, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
-      propertyPath: JumpBufferDistance
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3475040970437560572, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
-      propertyPath: GravityOnTheWayDown
-      value: 80
+      propertyPath: WheelRadius
+      value: 3.76
       objectReference: {fileID: 0}
     - target: {fileID: 3475040970437560572, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: RollRotationStrength
@@ -407,17 +395,33 @@ PrefabInstance:
       propertyPath: PitchRotationStrength
       value: 350
       objectReference: {fileID: 0}
+    - target: {fileID: 3574251033065677888, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3889445236378146615, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4139252452538947150, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597020273100420886, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597020273100420886, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.76
       objectReference: {fileID: 0}
     - target: {fileID: 5100563047166933623, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.521
+      objectReference: {fileID: 0}
+    - target: {fileID: 6219866158358536466, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.57
       objectReference: {fileID: 0}
     - target: {fileID: 6433416700652958165, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -501,7 +505,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8425690648056842242, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8618002932784546158, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: BrakeForce
@@ -513,11 +517,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8618002932784546158, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: SpringDamper
-      value: 75
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8618002932784546158, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: SpringStrength
-      value: 1250
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: 9007435584841766354, guid: c54cf2637ea507640a154be529e1f4b5, type: 3}
       propertyPath: m_Enabled
@@ -777,7 +781,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 5000
+  m_ColorTemperature: 7356
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
